@@ -63,7 +63,19 @@
         .logo-section img {
             height: 50px;
             width: auto;
+        }
+
+        .logo-section img:first-child,
+        .logo-section img:last-child {
             filter: brightness(0) invert(1);
+        }
+
+        .logo-section img:nth-child(2) {
+            /* EU logo - no filter applied to preserve original colors */
+            filter: none;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px;
+            border-radius: 4px;
         }
 
         .project-title h1 {
